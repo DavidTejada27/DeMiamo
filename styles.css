@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(#fffba7, rgb(244, 244, 74));
+}
+
+#container {
+    text-align: center;
+}
+
+#countdown {
+    color: #333;
+}
+
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#animation-container {
+    display: none;
+}
+#text {
+    display: block;
+    
+}
+#new-text{
+    display: none;
+    text-align: center;
+    
+}
+
+#animation-image {
+    max-width: 400px; /* Tamaño más pequeño */
+    width: 100%;
+    
+}
+
+@keyframes spin {
+    0% { transform: scale(0); }
+    25% { transform: scale(0.5);}
+    50% {transform: scale(1);}
+    75% {transform: scale(0.5);}
+    100% { transform: scale(0); }
+}
